@@ -1,31 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Designs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Design</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @designs.each do |design| %>
-      <tr>
-        <td><%= design.title %></td>
-        <td><%= design.design %></td>
-        <td><%= design.price %></td>
-        <td><%= link_to 'Show', design %></td>
-        <td><%= link_to 'Edit', edit_design_path(design) %></td>
-        <td><%= link_to 'Destroy', design, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Design', new_design_path %>
+<div class="album text-muted">
+  <div class="container">
+    <div class="row"> 
+			<%= render partial: 'design', collection: @designs %>
+		</div>
+	</div>
+</div>
