@@ -1,1 +1,9 @@
 @import "bootstrap";
+@import "font-awesome";
+
+#nav-logo {
+  display: flex;
+  width: 30%;
+  align-content: stretch;
+  padding-left: 2rem;
+}
